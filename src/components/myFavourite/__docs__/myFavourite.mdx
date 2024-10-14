@@ -1,0 +1,18 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import MyFavourite from './MyFavourite'; // Asegúrate de que la ruta sea correcta
+
+<Meta title="MyFavourite" component={MyFavourite} />
+
+# MyFavourite
+
+Componente personalizado de favorito (IconButton con ícono de corazón).
+
+## Example
+
+<Canvas>
+  <MyFavourite
+    color="primary"
+    disabled={false}
+    onClick={() => alert('Favorite clicked!')}
+  />
+</Canvas>

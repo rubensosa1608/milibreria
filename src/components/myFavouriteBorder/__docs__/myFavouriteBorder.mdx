@@ -1,0 +1,20 @@
+// src/components/myfavourite/MyFavouriteBorder.stories.tsx
+
+import { Meta, Canvas } from '@storybook/blocks';
+import MyFavouriteBorder from './MyFavouriteBorder';
+
+<Meta title="MyFavouriteBorder" component={MyFavouriteBorder} />
+
+# MyFavouriteBorder
+
+Componente personalizado que muestra un ícono de favorito bordeado (FavoriteBorderIcon).
+
+## Example
+
+<Canvas>
+  <MyFavouriteBorder
+    color="primary"
+    disabled={false}
+    onClick={() => alert('Favorite Border clicked!')}
+  />
+</Canvas>
