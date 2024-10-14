@@ -1,0 +1,24 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import MyButton from './MyButton'; // Asegúrate de que la ruta sea correcta
+
+
+<Meta title="MyButton" component={MyButton} />
+
+# MyButton
+
+Componente personalizado de botón.
+
+## Example
+
+<Canvas>
+  <MyButton
+    text="Click me"
+    txtColor="black"
+    bgColor="red"
+    borderColor="blue"
+    borderWidth={2}
+    size="medium"
+    hoverTxtColor="white"
+    hoverBgColor="green"
+  />
+</Canvas>
