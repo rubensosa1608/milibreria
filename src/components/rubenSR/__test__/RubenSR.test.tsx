@@ -5,7 +5,7 @@ import RubenSR from '../RubenSR';
 
 describe('RubenSR Component', () => {
   const props = {
-    testimonial: 'Soy un apasionado desarrollador de software con experiencia en tecnologías web.',
+    description: 'Soy un apasionado desarrollador de software con experiencia en tecnologías web.',
     position: 'Desarrollador Frontend',
     author: 'Ruben Sosa Ramos',
     avatarUrl: 'https://via.placeholder.com/150',
@@ -15,7 +15,7 @@ describe('RubenSR Component', () => {
     render(<RubenSR {...props} />);
 
     // Verifica que se muestre el testimonio
-    expect(screen.getByText(props.testimonial)).toBeInTheDocument();
+    expect(screen.getByText(props.description)).toBeInTheDocument();
 
     // Verifica que se muestre el cargo y el autor
     expect(screen.getByText(/Desarrollador Frontend/i)).toBeInTheDocument();
