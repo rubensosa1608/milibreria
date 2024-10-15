@@ -7874,9 +7874,9 @@ function $u(e) {
 }
 export {
   wu as CustomButton,
-  $u as RubenSR,
-  Tu as myButton,
-  Ru as myFavourite,
-  Ou as myFavouriteBorder
+  Tu as MyButton,
+  Ru as MyFavourite,
+  Ou as MyFavouriteBorder,
+  $u as RubenSR
 };
 //# sourceMappingURL=index.es.js.map
