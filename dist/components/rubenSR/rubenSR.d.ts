@@ -5,6 +5,7 @@ export interface RubenSRProps {
     avatarUrl: string;
     width?: number;
     height?: number;
+    bgColor: string;
 }
 declare function RubenSR(props: RubenSRProps): import("react/jsx-runtime").JSX.Element;
 export default RubenSR;
