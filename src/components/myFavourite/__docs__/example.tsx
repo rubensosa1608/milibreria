@@ -1,13 +1,11 @@
-import MyFavourite, { MyFavouriteProps } from "./MyFavourite"; // Asegúrate de que la ruta sea correcta
+import { MyFavourite } from 'milibreria';
 
-function Example(props: MyFavouriteProps) {
+function Example() {
   return (
     <MyFavourite
-      color={props.color}
-      disabled={props.disabled}
-      onClick={props.onClick}
+      color="secondary"
+      disabled={true}
+      onClick={() => alert('Favorite clicked!')}
     />
   );
 }
-
-export default Example;

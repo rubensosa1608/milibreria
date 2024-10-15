@@ -1,20 +1,31 @@
-// src/components/myfavourite/MyFavouriteBorder.stories.tsx
+// src/components/myFavourite/MyFavouriteBorder.stories.tsx
 
-import { Meta, Canvas } from '@storybook/blocks';
-import MyFavouriteBorder from './MyFavouriteBorder';
+import { Canvas, Meta } from "@storybook/blocks";
+import * as MyFavouriteBorder from "./myFavouriteBorder.stories"; // Asegúrate de que esta ruta sea correcta
 
-<Meta title="MyFavouriteBorder" component={MyFavouriteBorder} />
+<Meta of={MyFavouriteBorder} title="MyFavouriteBorder" />
 
 # MyFavouriteBorder
 
 Componente personalizado que muestra un ícono de favorito bordeado (FavoriteBorderIcon).
 
-## Example
+#### Example
 
-<Canvas>
-  <MyFavouriteBorder
-    color="primary"
-    disabled={false}
-    onClick={() => alert('Favorite Border clicked!')}
-  />
-</Canvas>
+<Canvas of={MyFavouriteBorder.Primary} />
+
+## Usage
+
+```tsx
+import { MyFavouriteBorder } from 'milibreria';
+
+function Example() {
+  return (
+    <MyFavouriteBorder
+      color="primary"
+      disabled={false}
+      onClick={() => alert('Favorite Border clicked!')}
+    />
+  );
+}
+
+export default Example;

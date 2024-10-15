@@ -2,7 +2,7 @@
 
 
 import React from 'react';
-import MyButton from './MyButton';
+import MyButton from '../myButton';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof MyButton> = {

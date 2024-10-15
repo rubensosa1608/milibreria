@@ -1,13 +1,11 @@
-// src/components/myfavourite/example.tsx
-import React from "react";
-import MyFavouriteBorder, { MyFavouriteBorderProps } from "./MyFavouriteBorder"; // Asegúrate de que la ruta sea correcta
+import { MyFavouriteBorder } from 'milibreria';
 
-function Example(props: MyFavouriteBorderProps) {
+function Example() {
   return (
     <MyFavouriteBorder
-      color={props.color}
-      disabled={props.disabled}
-      onClick={props.onClick}
+      color="secondary"
+      disabled={true}
+      onClick={() => alert('Favorite Border clicked!')}
     />
   );
 }

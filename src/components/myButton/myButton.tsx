@@ -1,7 +1,4 @@
-// src/components/myButton/MyButton.tsx
-import React from "react";
 import { Button } from "@mui/material";
-
 
 export interface MyButtonProps {
   text: string;
@@ -16,18 +13,10 @@ export interface MyButtonProps {
   onClick?: () => void;
 }
 
-const MyButton: React.FC<MyButtonProps> = ({
-  text,
-  txtColor,
-  bgColor,
-  borderColor,
-  borderWidth,
-  size,
-  hoverTxtColor,
-  hoverBgColor,
-  disabled,
-  onClick,
-}) => {
+function MyButton(props: MyButtonProps) {
+
+  const { text, txtColor, bgColor, borderColor, borderWidth, size, hoverTxtColor, hoverBgColor, disabled, onClick}  = props;
+
   return (
     <Button
       variant="outlined"
@@ -48,6 +37,6 @@ const MyButton: React.FC<MyButtonProps> = ({
       {text}
     </Button>
   );
-};
+}
 
 export default MyButton;

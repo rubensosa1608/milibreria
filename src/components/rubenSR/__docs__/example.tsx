@@ -1,17 +1,13 @@
-// src/components/tuNombreInicialesApellidos/example.tsx
+import { RubenSR } from 'milibreria';
 
-import React from "react";
-import RubenSR, { RubenSRProps } from "../rubenSR"; // Asegúrate de que la ruta sea correcta
-
-function Example(props: RubenSRProps) {
+function Example(){
   return (
     <RubenSR
-      description={props.description}
-      position={props.position}
-      author={props.author}
-      avatarUrl={props.avatarUrl}
-      width={props.width}
-      height={props.height}
+      description="Este es otro testimonio que refleja una gran experiencia."
+      author="Jane Doe"
+      avatarUrl="https://via.placeholder.com/150"
+      width={150}
+      height={150}
     />
   );
 }

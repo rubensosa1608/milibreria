@@ -1,33 +1,48 @@
 // src/components/myfavourite/MyFavourite.stories.tsx
 
-import React from 'react';
-import { Meta, Story } from '@storybook/react';
-import MyFavourite, { MyFavouriteProps } from './MyFavourite';
+import type { Meta, StoryObj } from '@storybook/react';
+import MyFavourite from '../myFavourite';
 
-export default {
+const meta: Meta<typeof MyFavourite> = {
   title: 'Components/MyFavourite',
   component: MyFavourite,
   argTypes: {
     color: {
       control: {
         type: 'select',
-        options: ['default', 'inherit', 'primary', 'secondary', 'error', 'info', 'success', 'warning'],
+        options: [
+          'default',
+          'inherit',
+          'primary',
+          'secondary',
+          'error',
+          'info',
+          'success',
+          'warning',
+        ],
       },
     },
     disabled: { control: 'boolean' },
     onClick: { action: 'clicked' },
   },
-} as Meta;
-
-const Template: Story<MyFavouriteProps> = (args) => <MyFavourite {...args} />;
-
-export const Primary = Template.bind({});
-Primary.args = {
-  color: 'primary',
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  color: 'secondary',
-  disabled: true,
+export default meta;
+
+type Story = StoryObj<typeof MyFavourite>;
+
+export const Primary: Story = {
+  args: {
+    color: 'primary',
+    disabled: false,
+    onClick: () => alert('Favorite clicked!'),
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    color: 'secondary',
+    disabled: true,
+    onClick: () => alert('Favorite clicked!'),
+  },
 };

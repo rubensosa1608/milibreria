@@ -1,6 +1,6 @@
 // example.tsx
 import React from "react";
-import MyButton, { MyButtonProps } from "./MyButton"; // Asegúrate de que la ruta sea correcta
+import MyButton, { MyButtonProps } from "../myButton"; // Asegúrate de que la ruta sea correcta
 
 
 function Example(props: MyButtonProps) {

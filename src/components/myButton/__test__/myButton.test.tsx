@@ -1,5 +1,3 @@
-// components/mybutton/MyButton.test.tsx
-
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import MyButton from '../MyButton';

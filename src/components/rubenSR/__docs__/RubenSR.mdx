@@ -1,22 +1,32 @@
-// src/components/tuNombreInicialesApellidos/RubenSR.stories.tsx
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./example.tsx";
+import * as RubenSRStories from "./RubenSR.stories.tsx";
 
-import { Canvas, Meta } from '@storybook/blocks';
-import RubenSR from './RubenSR'; // Asegúrate de que la ruta sea correcta
-
-<Meta title="RubenSR" component={RubenSR} />
+<Meta of={RubenSRStories} title="RubenSR" />
 
 # RubenSR
 
-Componente personalizado que muestra un testimonio.
+Componente personalizado que muestra un testimonio con autor y avatar.
 
-## Example
+#### Ejemplo
 
-<Canvas>
-  <RubenSR
-    testimonial="Este es un testimonio increíble. ¡Altamente recomendado!"
-    author="John Doe"
-    avatarUrl="https://via.placeholder.com/150"
-    width={150}
-    height={150}
-  />
-</Canvas>
+<Canvas of={RubenSRStories.Default} />
+
+## Uso
+
+```ts
+import { RubenSR } from 'milibreria';
+
+function Example(){
+  return (
+    <RubenSR
+      description="Este es un testimonio increíble. ¡Altamente recomendado!"
+      author="John Doe"
+      avatarUrl="https://via.placeholder.com/150"
+      width={150}
+      height={150}
+    />
+  );
+}
+
+export default Example;
